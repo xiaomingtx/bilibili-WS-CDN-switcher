@@ -1,9 +1,14 @@
 # bilibili-WS-CDN-switcher
 自动使用网宿cdn，北邮校园网可以节省流量
 
-ws.acgvideo.com在北邮校园网自动被解析为10.3.200.205，不使用校外流量
+~~ws.acgvideo.com在北邮校园网自动被解析为10.3.200.205，不使用校外流量~~
+ws.acgvideo.com再北邮校园网某些情况下会解析到外网地址，将使用校园网流量
+将下面内容加入到hosts文件，可解决该问题
+```
+10.3.200.205    ws.acgvideo.com
+```
 
-其他学校请自行测试ws.acgvideo.com能否解析到内网地址
+其他学校请自行测试ws.acgvideo.com能否解析到内网地址，并更具情况修改hosts
 
 
 # 使用方法
